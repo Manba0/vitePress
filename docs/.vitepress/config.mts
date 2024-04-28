@@ -2,7 +2,7 @@
  * @Author: HuWJ
  * @Date: 2024-04-26 14:02:52
  * @LastEditors: HuWJ
- * @LastEditTime: 2024-04-28 17:15:56
+ * @LastEditTime: 2024-04-28 17:31:48
  * @FilePath: \notesf:\Github\vitePress\docs\.vitepress\config.mts
  * @Description:
  */
@@ -12,6 +12,7 @@ import { defineConfig } from "vitepress";
 export default defineConfig({
   // 站点级选项
   title: "源计划-猿劲华",
+  base: "./",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     // 主题级选项
