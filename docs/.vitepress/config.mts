@@ -1,8 +1,8 @@
 /*
  * @Author: HuWJ
  * @Date: 2024-04-26 14:02:52
- * @LastEditors: HuWJ
- * @LastEditTime: 2024-06-20 17:08:43
+ * @LastEditors: Please set LastEditors
+ * @LastEditTime: 2024-06-20 18:17:49
  * @FilePath: \vitePress\docs\.vitepress\config.mts
  * @Description:
  */
@@ -18,7 +18,7 @@ export default defineConfig({
     // 主题级选项
     nav: [
       { text: "主页", link: "/" },
-      { text: "Javascript系列", link: "/javascript-series/api-examples" },
+      { text: "Javascript系列", link: "/javascript-series/in-depth-series/01" },
     ],
     // 多侧边栏 根据页面路径显示不同的侧边栏
     sidebar: {
