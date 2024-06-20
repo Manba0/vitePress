@@ -2,8 +2,8 @@
  * @Author: HuWJ
  * @Date: 2024-04-26 14:02:52
  * @LastEditors: HuWJ
- * @LastEditTime: 2024-04-29 09:37:33
- * @FilePath: \notesf:\Github\vitePress\docs\.vitepress\config.mts
+ * @LastEditTime: 2024-06-20 17:08:43
+ * @FilePath: \vitePress\docs\.vitepress\config.mts
  * @Description:
  */
 import { defineConfig } from "vitepress";
@@ -17,19 +17,54 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     // 主题级选项
     nav: [
-      { text: "Home", link: "/" },
-      { text: "Examples", link: "/markdown-examples" },
+      { text: "主页", link: "/" },
+      { text: "Javascript系列", link: "/javascript-series/api-examples" },
     ],
-
-    sidebar: [
-      {
-        text: "Examples",
-        items: [
-          { text: "Markdown Examples", link: "/markdown-examples" },
-          { text: "Runtime API Examples", link: "/api-examples" },
-        ],
-      },
-    ],
+    // 多侧边栏 根据页面路径显示不同的侧边栏
+    sidebar: {
+      "/javascript-series/": [
+        {
+          text: "深入系列",
+          collapsed: false,
+          items: [
+            {
+              text: "从原型到原型链",
+              link: "/javascript-series/in-depth-series/01",
+            },
+          ],
+        },
+        {
+          text: "专题系列",
+          collapsed: false,
+          items: [
+            {
+              text: "跟着underscore学防抖",
+              link: "/javascript-series/special-topics-series/01",
+            },
+          ],
+        },
+        {
+          text: "underscore 系列",
+          collapsed: false,
+          items: [
+            {
+              text: "如何写自己的 underscore",
+              link: "/javascript-series/underscore-series/01",
+            },
+          ],
+        },
+        {
+          text: "ES6 系列",
+          collapsed: false,
+          items: [
+            {
+              text: "如何写自己的 underscore",
+              link: "/javascript-series/es6-series/01",
+            },
+          ],
+        },
+      ],
+    },
 
     socialLinks: [
       { icon: "github", link: "https://github.com/vuejs/vitepress" },
